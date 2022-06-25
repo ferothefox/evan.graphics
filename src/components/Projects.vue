@@ -1,6 +1,6 @@
 <template>
     <div class="projects">
-
+        <div class="gradients" style="--color-a: #BA2DB7; --color-b: #CF3C7E; --color-c: #E94F35;"></div>
         <a class="projectsCardLink" href="https://mechakeys.robolab.io" target="_blank" rel="noopener noreferrer">
             <div class="projectsCard">
                 <div class="projectsCardContent">
@@ -103,16 +103,16 @@
         onMounted
     } from '@vue/runtime-core'
     onMounted(() => {
-        const featuresEl = document.querySelector(".projects");
-        const featureEls = document.querySelectorAll(".projectsCard");
+        const projectsParent = document.querySelector(".projects");
+        const projectsCard = document.querySelectorAll(".projectsCard");
 
-        featuresEl.addEventListener("pointermove", (ev) => {
-            featureEls.forEach((featureEl) => {
+        projectsParent.addEventListener("pointermove", (ev) => {
+            projectsCard.forEach((project) => {
                 // Not optimized yet, I know
-                const rect = featureEl.getBoundingClientRect();
+                const rect = project.getBoundingClientRect();
 
-                featureEl.style.setProperty("--x", ev.clientX - rect.left);
-                featureEl.style.setProperty("--y", ev.clientY - rect.top);
+                project.style.setProperty("--x", ev.clientX - rect.left);
+                project.style.setProperty("--y", ev.clientY - rect.top);
             });
         });
     });
@@ -131,6 +131,28 @@
 </script>
 
 <style scoped lang="scss">
+    .gradients {
+        pointer-events: none;
+        user-select: none;
+        position: absolute;
+        overflow: visible;
+        z-index: 3001;
+        inset: 0px;
+    }
+
+    .gradients:before {
+        content: "";
+        position: absolute;
+        opacity: 0.15;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: calc(-50px + 100vw);
+        height: 100vh;
+        filter: blur(80px); 
+        background: radial-gradient(400px circle at 60% 45%, var(--color-a), 70%, transparent ), radial-gradient(400px circle at 50% 55%,var(--color-b),60%,transparent), radial-gradient(350px circle at 40% 40%,var(--color-c),60%,transparent);
+    }
+
     a.projectsCardLink {
         color: #eeeeee;
     }

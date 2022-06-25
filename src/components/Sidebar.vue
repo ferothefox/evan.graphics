@@ -41,7 +41,6 @@
     .sidebar:hover {
         opacity: 0.9;
         transition: 0.1s ease-in-out;
-        width: 84px;
     }
 
     .sidebarLink {

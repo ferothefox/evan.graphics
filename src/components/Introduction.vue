@@ -8,8 +8,8 @@
     <div class="title">Evan Song</div>
 
     <div class="description">
-      I am an experienced designer and developer. I build effective interface
-      systems and UIs for high-demand products.
+      I am an experienced designer and developer. I build effective UIs and graphics for 
+      high-demand products and thriving online communities.
     </div>
   </div>
   <img class="hidden" src="../assets/img/ferologo.svg">

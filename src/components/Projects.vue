@@ -215,8 +215,9 @@
         --x-px: calc(var(--x) * 1px);
         --y-px: calc(var(--y) * 1px);
         --border: 2px;
-        // background: rgba(255, 255, 255, 0.125);
+        background: rgba(255, 255, 255, 0.125);
         overflow: hidden;
+        
 
         &:before,
         &:after {
@@ -229,7 +230,7 @@
             width: 100%;
             inset: 0px;
             border-radius: inherit;
-            background: radial-gradient(800px circle at var(--x-px) var(--y-px),
+            background: radial-gradient(750px circle at var(--x-px) var(--y-px),
                     rgba(255, 255, 255, 0.1),
                     transparent 40%);
         }
@@ -258,11 +259,11 @@
 
         padding: 1rem;
         border-radius: 1rem;
-        background: rgba(102, 102, 102, 0.125);
+        background: rgb(19, 19, 21);
     }
 
     #cdnAccess {
-        background: rgba(110, 42, 67, 0.45);
+        background: rgba(66, 14, 33, 0.45);
     }
 
     .projectsCardContentImage {

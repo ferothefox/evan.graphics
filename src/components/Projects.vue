@@ -116,11 +116,12 @@
 
 <style scoped lang="scss">
     a {
+        color: #909090;
         text-decoration: none;
     }
 
     a:visited {
-        color: inherit
+        color: #909090
     }
 
 

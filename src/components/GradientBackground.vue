@@ -245,7 +245,7 @@
         }
 
         to {
-            transform: translate3d(0px, 0px, 0px) scale3d(1.5, 2, 1) rotateX(20deg) rotateY(60deg) rotateZ(0deg) skew(0deg);
+            transform: translate3d(0px, 0px, 0px) scale3d(3, 2, 1) rotateX(20deg) rotateY(60deg) rotateZ(0deg) skew(0deg);
         }
     }
 
@@ -255,7 +255,7 @@
         }
 
         to {
-            transform: translate3d(0px, 0px, 0px) scale3d(1.5, 1.7, 1) rotateX(20deg) rotateY(60deg) rotateZ(0deg) skew(0deg);
+            transform: translate3d(0px, 0px, 0px) scale3d(1.2, 1.9, 1) rotateX(20deg) rotateY(60deg) rotateZ(0deg) skew(0deg);
         }
     }
 
@@ -265,7 +265,7 @@
         }
 
         to {
-            transform: translate3d(0px, 0px, 0px) scale3d(1.5, 1.7, 1) rotateX(20deg) rotateY(60deg) rotateZ(0deg) skew(0deg);
+            transform: translate3d(0px, 0px, 0px) scale3d(1.9, 1.2  , 1) rotateX(20deg) rotateY(60deg) rotateZ(0deg) skew(0deg);
         }
     }
 

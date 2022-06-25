@@ -20,7 +20,7 @@
             </div>
         </a>
 
-        <a href="https://en.pronouns.page" target="_blank" rel="noopener noreferrer">
+        <a class="projectsCardLink" href="https://en.pronouns.page" target="_blank" rel="noopener noreferrer">
             <div class="projectsCard">
                 <div class="projectsCardContent">
                     <img class="projectsCardContentImage" src="../assets/img/pronounspage.png"
@@ -115,23 +115,13 @@
 </script>
 
 <style scoped lang="scss">
-    .projectsCardLink {
-        color: #909090 !important;
-    }
-
     a.projectsCardLink {
-        color: #909090 !important;
+        color: #eeeeee;
     }
 
     a {
-        color: #909090;
         text-decoration: none;
     }
-
-    a:visited {
-        color: #909090
-    }
-
 
     .linkIcon {
         width: 16px;

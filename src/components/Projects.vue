@@ -27,8 +27,8 @@
                         alt="Pronouns.page by The Neutral Language Council logo">
                     <div class="projectsCardContentInner">
                         <div class="projectsCardContentInnerTitle">Pronouns.page <span
-                                style="margin-left: 8px; font-family: monospace; font-weight: normal">2022</span></div>
-                        <div class="projectsCardContentInnerDescription">Focused on accessiblity and ease-of-use.</div>
+                                style="margin-left: 8px; font-family: monospace; font-weight: normal">2021-2022</span></div>
+                        <div class="projectsCardContentInnerDescription">Working on accessibility, ease-of-use, and consistency.</div>
                         <a href="https://en.pronouns.page" target="_blank" rel="noopener noreferrer"
                             class="openLink">en.pronouns.page
                             <OpenLink class="linkIcon" /></a>
@@ -270,6 +270,10 @@
         width: 3rem;
         border-radius: 1rem;
         object-fit: contain;
+    }
+
+    .projectsCardContentImage {
+        background: rgba(102, 102, 102, 0.125);
     }
 
     .projectsCardContentInner {

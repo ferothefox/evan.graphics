@@ -39,7 +39,7 @@
 }
 
 .subtitle {
-  animation: fade-in-up 1s ease-in-out forwards;
+  animation: fade-in-up 0.2s ease-in-out forwards;
   opacity: 0;
   font-size: 20px;
   color: #909090;
@@ -65,11 +65,11 @@
 }
 
 .subtitle._2 {
-  animation-delay: 0.4s;
+  animation-delay: 0.1s;
 }
 
 .subtitle._3 {
-  animation-delay: 0.8s;
+  animation-delay: 0.2s;
 }
 
 .subtitles {
@@ -91,7 +91,7 @@
 @keyframes fade-in-up {
   from {
     opacity: 0;
-    transform: translateY(-16px);
+    transform: translateY(-8px);
   }
 
   to {

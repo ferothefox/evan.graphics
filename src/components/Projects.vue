@@ -61,6 +61,22 @@
             </div>
         </div>
 
+        <a class="projectsCardLink" href="https://cdn.evan.graphics" target="_blank" rel="noopener noreferrer">
+            <div class="projectsCard">
+                <div class="projectsCardContent" id="cdnAccess">
+                    <img class="projectsCardContentImage" src="../assets/img/ferologo.svg"
+                        alt="Fero logo">
+                    <div class="projectsCardContentInner">
+                        <div class="projectsCardContentInnerTitle">Upload file to CDN </div>
+                        <div class="projectsCardContentInnerDescription">Requires authorization to access.</div>
+                        <a href="https://cdn.evan.graphics" target="_blank" rel="noopener noreferrer"
+                            class="openLink">cdn.evan.graphics
+                            <OpenLink class="linkIcon" /></a>
+                    </div>
+                </div>
+            </div>
+        </a>
+
         <!-- <div class="skillButton" @click="showAllProjects = !showAllProjects">
         See my skill image
     </div>
@@ -221,6 +237,10 @@
         padding: 1rem;
         border-radius: 1rem;
         background: rgba(102, 102, 102, 0.125);
+    }
+
+    #cdnAccess {
+        background: rgba(110, 42, 67, 0.45);
     }
 
     .projectsCardContentImage {

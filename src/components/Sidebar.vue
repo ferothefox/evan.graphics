@@ -27,9 +27,7 @@
 
         gap: 32px;
 
-        height: 100%;
         width: 64px;
-        position: fixed;
 
         background-color: #0a0a0a;
 

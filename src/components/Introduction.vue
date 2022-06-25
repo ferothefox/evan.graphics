@@ -30,11 +30,11 @@
   font-size: 64px;
   font-weight: bolder;
 
-  margin-left: 128px;
+  margin-left: 64px;
 }
 
 .description {
-  margin-left: 128px;
+  margin-left: 64px;
   max-width: 400px;
 }
 
@@ -76,7 +76,7 @@
   display: flex;
   flex-direction: row;
   gap: 16px;
-  margin-left: 128px;
+  margin-left: 64px;
 }
 
 @keyframes shine {

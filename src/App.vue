@@ -62,12 +62,18 @@ body {
     flex-direction: column !important;
   }
 
+  .sidebar {
+    flex-direction: row !important;
+    width: 100% !important;
+    height: 64px;
+  }
+
   .subtitles, .title, .description {
-    margin: auto auto;
+    margin: 0 64px !important
   }
 
   .projects {
-    margin-left: 64px;
+    /* margin-left: 64px; */
   }
 }
 

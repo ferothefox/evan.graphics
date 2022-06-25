@@ -28,6 +28,11 @@ import Projects from './components/Projects.vue'
   font-weight: normal;
 }
 
+.hidden {
+  visibility: hidden;
+  display: none !important;
+}
+
 html, body {
   background-color: #0a0a0a;
   color: #eeeeee;

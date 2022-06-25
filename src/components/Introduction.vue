@@ -12,6 +12,7 @@
       systems and UIs for high-demand products.
     </div>
   </div>
+  <img class="hidden" src="../assets/img/ferologo.svg">
 </template>
 
 <style scoped lang="scss">

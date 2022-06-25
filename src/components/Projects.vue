@@ -1,7 +1,7 @@
 <template>
     <div class="projects">
 
-        <a href="https://mechakeys.robolab.io" target="_blank" rel="noopener noreferrer">
+        <a class="projectsCardLink" href="https://mechakeys.robolab.io" target="_blank" rel="noopener noreferrer">
             <div class="projectsCard">
                 <div class="projectsCardContent">
                     <img class="projectsCardContentImage" src="../assets/img/mechakeys.png"
@@ -115,6 +115,14 @@
 </script>
 
 <style scoped lang="scss">
+    .projectsCardLink {
+        color: #909090 !important;
+    }
+
+    a.projectsCardLink {
+        color: #909090 !important;
+    }
+
     a {
         color: #909090;
         text-decoration: none;

@@ -51,6 +51,21 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+@media only screen and (max-width: 800px) {
+  .layout {
+    flex-direction: column !important;
+  }
+
+  .subtitles, .title, .description {
+    margin: auto auto;
+  }
+
+  .projects {
+    margin-left: 64px;
+  }
+}
+
 </style>
 
 <style scoped>
@@ -64,5 +79,6 @@ body {
     width: 100%;
     height: 100%;
     display: flex;
+    flex-direction: row;
 }
 </style>

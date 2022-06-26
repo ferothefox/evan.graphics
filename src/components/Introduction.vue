@@ -76,8 +76,8 @@ export default {
   // opacity: 0;
   // max-height: 0px;
 
-    animation: slideIn 0.9s ease; 
-    overflow: hidden;
+  animation: slideIn 0.9s ease; 
+  overflow: hidden;
 }
 
 @keyframes slideOut {

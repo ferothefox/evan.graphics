@@ -177,15 +177,6 @@ import OpenLink from "../icons/link.vue"
         z-index: 1;
     }
 
-    /* .skillButton {
-    padding: 1rem;
-    background-color: white;
-    color: black;   
-    margin: 1rem;
-    border-radius: 1rem;
-    cursor: default;
-} */
-
     .projects {
         display: flex;
         flex-direction: column;

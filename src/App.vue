@@ -93,7 +93,7 @@ button {
   }
 
   .projects {
-    /* margin-left: 64px; */
+    
   }
 }
 

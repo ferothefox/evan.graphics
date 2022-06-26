@@ -205,7 +205,7 @@ import OpenLink from "../icons/link.vue"
     }
 
     .projectsCard {
-        max-width: 750px;
+        max-width: 600px;
         min-height: 110px;
     }
 
@@ -228,8 +228,7 @@ import OpenLink from "../icons/link.vue"
         --x-px: calc(var(--x) * 1px);
         --y-px: calc(var(--y) * 1px);
         --border: 1px;
-        background: rgba(255, 255, 255, 0.12) none repeat scroll 0% 0%;
-        box-shadow: rgba(0, 0, 0, 0.12) 0px 12px 12px;
+        background: rgba(255, 255, 255, 0.08) none repeat scroll 0% 0%;
         
         overflow: hidden;
         

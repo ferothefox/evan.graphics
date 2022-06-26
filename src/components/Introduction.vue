@@ -202,7 +202,9 @@ animation: fade-in-up 1s ease-in-out forwards;
 }
 
 .skillIcons {
+    margin-top: 0.5rem;
     object-fit: contain;
+    width: 100%;
 }
 
 .subtitle {

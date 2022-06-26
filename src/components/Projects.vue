@@ -185,6 +185,7 @@ import OpenLink from "../icons/link.vue"
         animation: fade-in-left 1s ease-in-out forwards;
 
         min-height: 0;
+        flex: 1;
     }
 
     @keyframes fade-in-left {
@@ -197,6 +198,10 @@ import OpenLink from "../icons/link.vue"
             opacity: 1;
             transform: translateY(0);
         }
+    }
+
+    .projectsCard {
+        max-width: 600px;
     }
 
     .projectsCard {

@@ -8,9 +8,13 @@
       </div>
       <div class="title">Evan Song</div>
 
-      <div class="description">
+      <div v-if="!showExtendedDescription" class="description">
         I am an experienced designer and developer. I build effective UIs and
         graphics for high-demand products and thriving online communities.
+      </div>
+
+      <div v-if="!showExtendedDescription" class="description paragraphMargin">
+        Take a look at my social media, or email me at <span style="font-family: monospace; font-weight: normal">hi@evan.graphics</span>
       </div>
 
       <button
@@ -30,7 +34,7 @@
             <li>Keyboard and audio enthusiast</li>
             <li>Loves web-tech, typography, and cryptography</li>
             <li>Dr. Pepper enjoyer</li>
-            <li><img src="https://skillicons.dev/icons?i=js,ts,vue,html,css,wasm,rust,cpp,java,kotlin,aws,ai,ps,figma&perline=5"></li>
+            <img class="skillIcons" src="https://skillicons.dev/icons?i=js,ts,vue,html,css,wasm,rust,cpp,java,kotlin,gradle,maven,aws,ai,ps,figma,blender,unreal&perline=9">
           </ul>
         </div>
       </Transition>
@@ -55,6 +59,9 @@ export default {
 
 
 <style scoped lang="scss">
+.paragraphMargin {
+  margin-top: 1rem;
+}
 .slide-enter-active,
 .slide-leave-active {
   // transition: all 0.1s !important;
@@ -105,6 +112,9 @@ export default {
 
 
 .skillButton {
+animation: fade-in-up 1s ease-in-out forwards;
+ animation-delay: 0.4s;
+ opacity: 0;
  transition: 0.2s ease;
 
   margin-top: 1rem;
@@ -152,31 +162,49 @@ export default {
 
   overflow: hidden;
   height: 100vh;
+  flex: 1;
+
+  flex-shrink: 2;
+  align-items: center;
 }
 
 .wrapper {
-  margin: 64px;
+  margin: 32px;
 }
 
 .title {
+  opacity: 0;
   font-size: 64px;
   font-weight: bolder;
+
+  animation: fade-in-up 1s ease-in-out forwards;
+  animation-delay: 0.3s;
 }
 
 .description {
-  max-width: 400px;
+  opacity: 0;
+  max-width: 500px;
+  animation: fade-in-up 1s ease-in-out forwards;
+  animation-delay: 0.4s;
 }
 
 .extendedDescription {
   display: flex;
-  max-width: 400px;
+  max-width: 500px;
   word-wrap: break-word;
   // position: absolute;
+
+  flex-direction: column;
 
   & > ul > li {
     margin-top: 0.5rem;
   }
 }
+
+.skillIcons {
+    object-fit: contain;
+}
+
 .subtitle {
   animation: fade-in-up 1s ease-in-out forwards;
   opacity: 0;

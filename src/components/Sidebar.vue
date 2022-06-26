@@ -1,10 +1,10 @@
 <template>
     <nav class="sidebar">
-        <a class="sidebarLink" href="https://discord.gg/T8AYQ24Hzg" target="_blank" rel="noopener noreferrer">
+        <a class="sidebarLink" href="https://go.evan.graphics/discord" target="_blank" rel="noopener noreferrer">
             <Discord /></a>
-        <a class="sidebarLink" href="https://twitter.com/feroarts" target="_blank" rel="noopener noreferrer">
+        <a class="sidebarLink" href="https://go.evan.graphics/twitter" target="_blank" rel="noopener noreferrer">
             <Twitter /></a>
-        <a class="sidebarLink" href="https://github.com/ferodevs" target="_blank" rel="noopener noreferrer">
+        <a class="sidebarLink" href="https://go.evan.graphics/github" target="_blank" rel="noopener noreferrer">
             <GitHub /></a>
 
     </nav>

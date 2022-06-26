@@ -46,7 +46,7 @@ export default {
           icon: 'mechakeys.png',
           name: 'MechaKeys',
           year: '2021-2022',
-          cardLink: "https://mechakeys.robolab.io",
+          cardLink: "https://go.evan.graphics/mechakeys",
           displayLink: "mechakeys.robolab.io",
           description:
             'Designed a minimal, extensible, and streamlined UI.',
@@ -55,7 +55,7 @@ export default {
           icon: 'pronounspage.png',
           name: 'Pronouns.page',
           year: '2021-2022',
-          cardLink: "https://en.pronouns.page",
+          cardLink: "https://go.evan.graphics/pronouns-page-english",
           displayLink: "en.pronouns.page",
           description:
             'Designing for accessibility, ease-of-use, and consistency',

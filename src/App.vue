@@ -11,7 +11,7 @@ import Projects from './components/Projects.vue'
 <div class="app">
   <div class="layout">
     <Sidebar/>
-    <Background/>
+    <!-- <Background/> -->
 
     <Introduction/>
     <Projects/>
@@ -86,14 +86,6 @@ button {
   .wrapper {
     margin: 32px 32px 32px 32px !important;
     height: 100vh;
-  }
-
-  .subtitles, .title, .description {
-    /* margin: 0 64px !important */
-  }
-
-  .projects {
-    
   }
 }
 

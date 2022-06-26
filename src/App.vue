@@ -11,7 +11,7 @@ import Projects from './components/Projects.vue'
 <div class="app">
   <div class="layout">
     <Sidebar/>
-    <!-- <Background/> -->
+    <Background/>
 
     <Introduction/>
     <Projects/>

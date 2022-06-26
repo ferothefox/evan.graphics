@@ -3,6 +3,7 @@
         <div class="gradients" style="--color-a: #BA2DB7; --color-b: #CF3C7E; --color-c: #E94F35;"></div>
         <a class="projectsCardLink" href="https://mechakeys.robolab.io" target="_blank" rel="noopener noreferrer">
             <div class="projectsCard">
+                <div class="projectsCardSpotlightBackground"></div>
                 <div class="projectsCardContent">
                     <img class="projectsCardContentImage" src="../assets/img/mechakeys.png"
                         alt="MechaKeys by robolab.io logo">
@@ -22,6 +23,7 @@
 
         <a class="projectsCardLink" href="https://en.pronouns.page" target="_blank" rel="noopener noreferrer">
             <div class="projectsCard">
+                <div class="projectsCardSpotlightBackground"></div>
                 <div class="projectsCardContent">
                     <img class="projectsCardContentImage" src="../assets/img/pronounspage.png"
                         alt="Pronouns.page by The Neutral Language Council logo">
@@ -38,6 +40,7 @@
         </a>
 
         <div class="projectsCard">
+            <div class="projectsCardSpotlightBackground"></div>
             <div class="projectsCardContent">
                 <img class="projectsCardContentImage" src="../assets/img/powercord.png" alt="Powercord logo">
                 <div class="projectsCardContentInner">
@@ -50,6 +53,7 @@
         </div>
 
         <div class="projectsCard">
+            <div class="projectsCardSpotlightBackground"></div>
             <div class="projectsCardContent">
                 <img class="projectsCardContentImage" src="../assets/img/reactsynergy.png" alt="React Synergy logo">
                 <div class="projectsCardContentInner">
@@ -63,6 +67,7 @@
 
         <a class="projectsCardLink" href="https://cdn.evan.graphics" target="_blank" rel="noopener noreferrer">
             <div class="projectsCard">
+                <div class="projectsCardSpotlightBackground"></div>
                 <div class="projectsCardContent" id="cdnAccess">
                     <img class="projectsCardContentImage" src="../assets/img/ferologo.svg"
                         alt="Fero logo">
@@ -108,7 +113,6 @@
 
         projectsParent.addEventListener("pointermove", (ev) => {
             projectsCard.forEach((project) => {
-                // Not optimized yet, I know
                 const rect = project.getBoundingClientRect();
 
                 project.style.setProperty("--x", ev.clientX - rect.left);
@@ -201,26 +205,34 @@ import OpenLink from "../icons/link.vue"
     }
 
     .projectsCard {
-        max-width: 600px;
+        max-width: 750px;
+        min-height: 110px;
     }
 
     .projectsCard {
-        margin: 1rem;
+        margin: 0.5rem 2rem 0.5rem 2rem;
         border-radius: 1rem;
         /* background-color: rgba(255, 255, 255, 0.1) */
         // background: rgba(255, 255, 255, 0.1);
         // border-radius: 16px;
         // box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(4px);
         // border: 1px solid rgba(255, 255, 255, 0.44);
+
+        backdrop-filter: blur(4px);
+
+        top: var(--border);
+        bottom: var(--border);
+        left: var(--border);
+        right: var(--border);
 
         --x-px: calc(var(--x) * 1px);
         --y-px: calc(var(--y) * 1px);
-        --border: 2px;
-        background: rgba(255, 255, 255, 0.125);
+        --border: 1px;
+        background: rgba(255, 255, 255, 0.12) none repeat scroll 0% 0%;
+        box-shadow: rgba(0, 0, 0, 0.12) 0px 12px 12px;
+        
         overflow: hidden;
         
-
         &:before,
         &:after {
             content: "";
@@ -232,9 +244,8 @@ import OpenLink from "../icons/link.vue"
             width: 100%;
             inset: 0px;
             border-radius: inherit;
-            background: radial-gradient(750px circle at var(--x-px) var(--y-px),
-                    rgba(255, 255, 255, 0.1),
-                    transparent 40%);
+            background: radial-gradient(800px circle at var(--x-px) var(--y-px),rgba(255,255,255,0.19),transparent 40%);
+            
         }
 
         &:before {
@@ -244,14 +255,32 @@ import OpenLink from "../icons/link.vue"
         &:after {
             opacity: 0;
             z-index: 2;
-            transition: opacity 0.4s ease;
+            transition: opacity 400ms ease 0s;
         }
 
         &:hover:after {
             opacity: 1;
         }
+    }
 
+    .projectsCardSpotlightBackground:hover {
+        opacity: 1;
+    }
 
+    .projectsCardSpotlightBackground {
+        pointer-events: none;
+        user-select: none;
+        position: absolute;
+        z-index: 1;
+        opacity: 0;
+        top: var(--border);
+        bottom: var(--border);
+        left: var(--border);
+        right: var(--border);
+        border-radius: 1rem;
+        background: radial-gradient(400px circle at var(--x) var(--y),rgba(255,255,255,0.19),transparent);
+        contain: strict;
+        transition: opacity 400ms ease 0s;
     }
 
     .projectsCardContent {
@@ -261,7 +290,11 @@ import OpenLink from "../icons/link.vue"
 
         padding: 1rem;
         border-radius: 1rem;
-        background: rgb(19, 19, 21);
+        background: rgb(19, 19, 21) none repeat scroll 0% 0%;
+
+        z-index: 1;
+        position: absolute;
+        inset: var(--border);
     }
 
     // #cdnAccess {

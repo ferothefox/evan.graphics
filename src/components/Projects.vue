@@ -186,7 +186,7 @@ import OpenLink from "../icons/link.vue"
 
         min-height: 0;
     }
-    
+
     @keyframes fade-in-left {
         from {
             opacity: 0;
@@ -268,6 +268,9 @@ import OpenLink from "../icons/link.vue"
         width: 3rem;
         border-radius: 1rem;
         object-fit: contain;
+
+        display: flex;
+        flex-shrink: 0;
     }
 
     .projectsCardContentImage {

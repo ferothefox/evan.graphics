@@ -186,6 +186,7 @@ import OpenLink from "../icons/link.vue"
 
         min-height: 0;
     }
+    
     @keyframes fade-in-left {
         from {
             opacity: 0;

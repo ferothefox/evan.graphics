@@ -23,7 +23,7 @@ import Project from "./ProjectCard.vue"
         onMounted
     } from '@vue/runtime-core'
     onMounted(() => {
-        const projectsParent = document.querySelector(".projects");
+        const projectsParent = document.querySelector(".layout");
         const projectsCard = document.querySelectorAll(".projectsCard");
 
         projectsParent.addEventListener("pointermove", (ev) => {

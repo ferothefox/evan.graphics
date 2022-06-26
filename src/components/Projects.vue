@@ -117,7 +117,7 @@
         });
     });
 
-    import OpenLink from "../icons/link.vue"
+import OpenLink from "../icons/link.vue"
 </script>
 
 <script>
@@ -151,6 +151,10 @@
         height: 100vh;
         filter: blur(80px); 
         background: radial-gradient(400px circle at 60% 45%, var(--color-a), 70%, transparent ), radial-gradient(400px circle at 50% 55%,var(--color-b),60%,transparent), radial-gradient(350px circle at 40% 40%,var(--color-c),60%,transparent);
+    }
+
+    .projectsCardLink, .projectsCard {
+        flex-shrink: 0;
     }
 
     a.projectsCardLink {
@@ -188,8 +192,9 @@
         justify-content: center;
 
         animation: fade-in-left 1s ease-in-out forwards;
-    }
 
+        min-height: 0;
+    }
     @keyframes fade-in-left {
         from {
             opacity: 0;

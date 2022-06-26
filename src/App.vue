@@ -7,6 +7,7 @@ import Projects from './components/Projects.vue'
 </script>
 
 <template>
+<noscript>I'm sorry. You can't see my website without Javascript enabled because it utilizes a Javascript framework to render and manage itself. There are no cookies, no tracking, no ads, and no third-party requests. A static version may be served in the future. For now, thanks for understanding.</noscript>
 <div class="app">
   <div class="layout">
     <Sidebar/>
@@ -19,6 +20,8 @@ import Projects from './components/Projects.vue'
 </template>
 
 <style>
+* { min-width: 0; min-height: 0; }
+
 *,
 *::before,
 *::after {
@@ -57,6 +60,18 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+button {
+  background-color: transparent;
+  background-image: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding: 0;
+  margin: 0;  
+  line-height: inherit;
+  color: inherit;
+  border: none;
+}
+
 @media only screen and (max-width: 800px) {
   .layout {
     flex-direction: column !important;
@@ -65,16 +80,27 @@ body {
   .sidebar {
     flex-direction: row !important;
     width: 100% !important;
-    height: 64px;
+    height: 64px !important;
+  }
+
+  .wrapper {
+    margin: 32px 32px 32px 32px !important;
+    height: 100vh;
   }
 
   .subtitles, .title, .description {
-    margin: 0 64px !important
+    /* margin: 0 64px !important */
   }
 
   .projects {
     /* margin-left: 64px; */
   }
+}
+
+ul, ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 </style>

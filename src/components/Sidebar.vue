@@ -36,6 +36,8 @@
         animation: fade-in-right 1s;
 
         z-index: 3001;
+
+        height: 100vh;
     }
 
     .sidebar:hover {

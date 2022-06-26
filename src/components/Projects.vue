@@ -150,7 +150,7 @@ import OpenLink from "../icons/link.vue"
         width: calc(-50px + 100vw);
         height: 100vh;
         filter: blur(80px); 
-        background: radial-gradient(400px circle at 60% 45%, var(--color-a), 70%, transparent ), radial-gradient(400px circle at 50% 55%,var(--color-b),60%,transparent), radial-gradient(350px circle at 40% 40%,var(--color-c),60%,transparent);
+        background: radial-gradient(400px circle at 40% 45%, var(--color-a), 70%, transparent ), radial-gradient(400px circle at 50% 55%,var(--color-b),60%,transparent), radial-gradient(350px circle at 40% 40%,var(--color-c),60%,transparent);
     }
 
     .projectsCardLink, .projectsCard {
@@ -264,9 +264,9 @@ import OpenLink from "../icons/link.vue"
         background: rgb(19, 19, 21);
     }
 
-    #cdnAccess {
-        background: rgba(66, 14, 33, 0.45);
-    }
+    // #cdnAccess {
+    //     background: rgba(66, 14, 33, 0.45);
+    // }
 
     .projectsCardContentImage {
         height: 3rem;

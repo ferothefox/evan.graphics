@@ -186,21 +186,39 @@ import OpenLink from "../icons/link.vue"
         flex-direction: column;
         justify-content: center;
 
-        animation: fade-in-left 1s ease-in-out forwards;
+        // animation: fade-in-left 1s ease-in-out forwards;
+
+        animation: 800ms linear 0s 1 normal backwards running blur-in;
 
         min-height: 0;
         flex: 1;
     }
 
-    @keyframes fade-in-left {
-        from {
-            opacity: 0;
-            transform: translateX(16px);
-        }
+    // @keyframes fade-in-left {
+    //     from {
+    //         opacity: 0;
+    //         transform: translateX(16px);
+    //     }
 
-        to {
-            opacity: 1;
-            transform: translateY(0);
+    //     to {
+    //         opacity: 1;
+    //         transform: translateY(0);
+    //     }
+    // }
+    @keyframes blur-in {
+        0% {
+            opacity:0;
+            -webkit-filter:blur(30px);
+            filter:blur(30px);
+        }
+        70% {
+            -webkit-filter:none;
+            filter:none;
+        }
+        100% {
+            opacity:1;
+            -webkit-filter:none;
+            filter:none;
         }
     }
 

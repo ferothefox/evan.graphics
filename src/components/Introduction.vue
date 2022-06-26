@@ -8,12 +8,12 @@
       </div>
       <div class="title">Evan Song</div>
 
-      <div v-if="!showExtendedDescription" class="description">
+      <div v-if="!showExtendedDescription" class="description _1">
         I am an experienced designer and developer. I build effective UIs and
         graphics for high-demand products and thriving online communities.
       </div>
 
-      <div v-if="!showExtendedDescription" class="description paragraphMargin">
+      <div v-if="!showExtendedDescription" class="description paragraphMargin _2">
         Take a look at my social media, or email me at <span style="font-family: monospace; font-weight: normal">hi@evan.graphics</span>
       </div>
 
@@ -59,6 +59,9 @@ export default {
 
 
 <style scoped lang="scss">
+* {
+  --base-delay: 0ms;
+}
 .paragraphMargin {
   margin-top: 1rem;
 }
@@ -112,33 +115,39 @@ export default {
 
 
 .skillButton {
-animation: fade-in-up 1s ease-in-out forwards;
- animation-delay: 0.4s;
- opacity: 0;
- transition: 0.2s ease;
+  animation-name: fade-in-down-better;
+  animation-duration: 800ms;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: backwards;
+  animation-play-state: running;
+  animation-delay: calc(var(--base-delay) + 1100ms); 
+  
+  transition: 0.2s ease;
 
-  margin-top: 1rem;
-  color: #909090;
-  cursor: default;
+    margin-top: 1rem;
+    color: #909090;
+    cursor: default;
 
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 0.25rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.25rem;
 
-  &:hover {
-      color: #eeeeee;
+    &:hover {
+        color: #eeeeee;
 
-      .caret {
-        fill: #eeeeee;
-      }
+        .caret {
+          fill: #eeeeee;
+        }
 
-      .caretActive {
-        fill: #eeeeee;
-      }
-  }
+        .caretActive {
+          fill: #eeeeee;
+        }
+    }
 
-  width: 100%
+    width: 100%
 }
 
 .caret {
@@ -173,19 +182,42 @@ animation: fade-in-up 1s ease-in-out forwards;
 }
 
 .title {
-  opacity: 0;
+  animation-name: fade-in-up-better;
+  animation-duration: 800ms;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: backwards;
+  animation-play-state: running;
+  animation-delay: calc(var(--base-delay) + 150ms); 
   font-size: 64px;
   font-weight: bolder;
-
-  animation: fade-in-up 1s ease-in-out forwards;
-  animation-delay: 0.3s;
 }
 
 .description {
-  opacity: 0;
   max-width: 500px;
-  animation: fade-in-up 1s ease-in-out forwards;
-  animation-delay: 0.4s;
+}
+
+.description._1 {
+  animation-name: fade-in-up-better;
+  animation-duration: 800ms;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: backwards;
+  animation-play-state: running;
+  animation-delay: calc(var(--base-delay) + 900ms); 
+}
+
+.description._2 {
+  animation-name: fade-in-up-better;
+  animation-duration: 800ms;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: backwards;
+  animation-play-state: running;
+  animation-delay: calc(var(--base-delay) + 1000ms); 
 }
 
 .extendedDescription {
@@ -208,8 +240,13 @@ animation: fade-in-up 1s ease-in-out forwards;
 }
 
 .subtitle {
-  animation: fade-in-up 1s ease-in-out forwards;
-  opacity: 0;
+  animation-name: fade-in-up-better;
+  animation-duration: 800ms;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: backwards;
+  animation-play-state: running;
   font-size: 20px;
   color: #909090;
 } 
@@ -230,15 +267,15 @@ animation: fade-in-up 1s ease-in-out forwards;
 // }
 
 .subtitle._1 {
-  animation-delay: 0;
+  animation-delay: calc(var(--base-delay) + 350ms); 
 }
 
 .subtitle._2 {
-  animation-delay: 0.1s;
+  animation-delay: calc(var(--base-delay) + 375ms); 
 }
 
 .subtitle._3 {
-  animation-delay: 0.2s;
+  animation-delay: calc(var(--base-delay) + 400ms); 
 }
 
 .subtitles {
@@ -254,6 +291,36 @@ animation: fade-in-up 1s ease-in-out forwards;
   to {
     color: white;
   }
+}
+
+@keyframes fade-in-up-better {
+ from {
+  opacity:0;
+  -webkit-transform:translateY(20px);
+  -ms-transform:translateY(20px);
+  transform:translateY(20px);
+ }
+ to {
+  opacity:1;
+  -webkit-transform:none;
+  -ms-transform:none;
+  transform:none;
+ }
+}
+
+@keyframes fade-in-down-better {
+ from {
+  opacity:0;
+  -webkit-transform:translateY(-20px);
+  -ms-transform:translateY(-20px);
+  transform:translateY(-20px);
+ }
+ to {
+  opacity:1;
+  -webkit-transform:none;
+  -ms-transform:none;
+  transform:none;
+ }
 }
 
 @keyframes fade-in-up {

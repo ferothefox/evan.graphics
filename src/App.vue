@@ -87,6 +87,11 @@ button {
     margin: 32px 32px 32px 32px !important;
     height: 100vh;
   }
+
+  .sidebar {
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15); 
+  }
 }
 
 ul, ol {

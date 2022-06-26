@@ -29,7 +29,9 @@
 
         width: 64px;
 
-        background-color: #0a0a0a;
+        /* background-color: #0a0a0a; */
+
+        background: rgb(19, 19, 21) none repeat scroll 0% 0%;
 
         opacity: 0.5;
         transition: 0.1s ease-in-out;
@@ -38,6 +40,7 @@
         z-index: 3001;
 
         height: 100vh;
+        border-right: 1px solid rgba(255, 255, 255, 0.15);
     }
 
     .sidebar:hover {

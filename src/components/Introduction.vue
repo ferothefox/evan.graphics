@@ -74,7 +74,7 @@ export default {
   // max-height: 300px;
   // overflow: hidden;
 
-  animation: slideOut 0.9s ease;
+  animation: slideOut 1.2s ease;
   overflow: hidden;
 }
 
@@ -86,7 +86,7 @@ export default {
   // opacity: 0;
   // max-height: 0px;
 
-  animation: slideIn 0.9s ease; 
+  animation: slideIn 1.4s ease; 
   overflow: hidden;
 }
 

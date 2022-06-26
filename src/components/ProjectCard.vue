@@ -165,7 +165,7 @@ export default {
         left: var(--border);
         right: var(--border);
         border-radius: 1rem;
-        background: radial-gradient(400px circle at var(--x) var(--y),rgba(255,255,255,0.19),transparent);
+        background: radial-gradient(800px circle at var(--x) var(--y),rgba(255,255,255,0.1),transparent);
         contain: strict;
         transition: opacity 400ms ease 0s;
     }

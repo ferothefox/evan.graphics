@@ -78,6 +78,7 @@ export default {
           icon: 'ferologo.svg',
           name: 'Art \"Portfolio\"',
           cardLink: "https://go.evan.graphics/twitter-collection-art",
+          displayLink: "twitter.com",
           year: '',
           description:
             'Collections of doodles that I publish to Twitter'

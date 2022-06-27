@@ -74,6 +74,14 @@ export default {
           description:
             'Developed a truly reactive Javascript framework with an incredibly tiny footprint.',
         },
+        {
+          icon: 'ferologo.svg',
+          name: 'Art \"Portfolio\"',
+          cardLink: "https://go.evan.graphics/twitter-collection-art",
+          year: '',
+          description:
+            'Collections of doodles that I publish to Twitter'
+        }
       ],
     }
   },

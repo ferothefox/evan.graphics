@@ -49,7 +49,7 @@ export default {
           cardLink: "https://go.evan.graphics/mechakeys",
           displayLink: "mechakeys.robolab.io",
           description:
-            'Designed a minimal, extensible, and streamlined UI.',
+            'Designed a minimal, extensible, and streamlined UI',
         },
         {
           icon: 'pronounspage.png',
@@ -65,14 +65,14 @@ export default {
           name: 'Powercord',
           year: '2022',
           description:
-            'Developed optimized and utilitarian modifcations for the Discord client.',
+            'Developed optimized and utilitarian modifcations for the Discord client',
         },
         {
           icon: 'reactsynergy.png',
           name: 'ReactSynergy',
           year: '2022',
           description:
-            'Developed a truly reactive Javascript framework with an incredibly tiny footprint.',
+            'Developed a truly reactive Javascript framework with an incredibly tiny footprint',
         },
         {
           icon: 'ferologo.svg',

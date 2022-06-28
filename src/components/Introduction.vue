@@ -1,6 +1,6 @@
 <template>
-  <div class="container">
-    <div class="wrapper">
+  <div class="introduction">
+    <div class="introductionWrapper">
       <div v-if="!showExtendedDescription" class="subtitles">
         <div class="subtitle _1">Artist</div>
         <div class="subtitle _2">Designer</div>
@@ -40,7 +40,6 @@
       </Transition>
     </div>
   </div>
-  <img class="hidden" src="../assets/img/ferologo.svg" />
 </template>
 
 <script setup>
@@ -165,7 +164,7 @@ export default {
   fill: #eeeeee;
 }
 
-.container {
+.introduction {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -178,7 +177,7 @@ export default {
   align-items: center;
 }
 
-.wrapper {
+.introductionWrapper {
   margin: 32px;
 }
 

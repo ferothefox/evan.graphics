@@ -3,17 +3,19 @@
 
         <div class="gradients" style="--color-a: #BA2DB7; --color-b: #CF3C7E; --color-c: #E94F35;"></div>
 
-        <Project
-            v-for="project in content"
-            :key="project.name"
-            :cardIcon="project.icon"
-            :name="project.name"
-            :cardLink="project.cardLink"
-            :displayLink="project.displayLink"
-            :year="project.year"
-            :description="project.description"
-        />
-
+        <div class="projectsWrapper" tabindex="-1">
+            <Project
+                v-for="project in content"
+                :key="project.name"
+                :cardIcon="project.icon"
+                :name="project.name"
+                :cardLink="project.cardLink"
+                :displayLink="project.displayLink"
+                :year="project.year"
+                :description="project.description"
+                tabindex="1"
+            />
+        </div>
     </div>
 </template>
 
@@ -119,8 +121,14 @@ export default {
 
         animation: 800ms linear 0s 1 normal backwards running blur-in;
 
+        height: 100vh;
         min-height: 0;
         flex: 1;
+    }
+
+    .projectsWrapper {
+        overflow-y: auto;
+        padding: 2rem;
     }
 
     @keyframes blur-in {

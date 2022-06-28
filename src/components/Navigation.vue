@@ -1,10 +1,10 @@
 <template>
-    <nav class="sidebar">
-        <a class="sidebarLink" href="https://go.evan.graphics/discord" target="_blank" rel="noopener noreferrer">
+    <nav class="navigationWrapper">
+        <a class="navigationLink" href="https://go.evan.graphics/discord" target="_blank" rel="noopener noreferrer">
             <Discord /></a>
-        <a class="sidebarLink" href="https://go.evan.graphics/twitter" target="_blank" rel="noopener noreferrer">
+        <a class="navigationLink" href="https://go.evan.graphics/twitter" target="_blank" rel="noopener noreferrer">
             <Twitter /></a>
-        <a class="sidebarLink" href="https://go.evan.graphics/github" target="_blank" rel="noopener noreferrer">
+        <a class="navigationLink" href="https://go.evan.graphics/github" target="_blank" rel="noopener noreferrer">
             <GitHub /></a>
 
     </nav>
@@ -18,7 +18,7 @@
 
 
 <style scoped>
-    .sidebar {
+    .navigationWrapper {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -43,12 +43,12 @@
         border-right: 1px solid rgba(255, 255, 255, 0.15);
     }
 
-    .sidebar:hover {
+    .navigationWrapper:hover {
         opacity: 0.9;
         transition: 0.1s ease-in-out;
     }
 
-    .sidebarLink {
+    .navigationLink {
         width: 24px;
         height: 24px;
 

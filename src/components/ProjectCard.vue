@@ -33,6 +33,7 @@
                     target="_blank"
                     rel="noopener noreferrer"
                     class="openLink"
+                    tabindex="-1"
                     >{{ displayLink }} <OpenLink class="linkIcon"/>
                     
                 </a>
@@ -99,12 +100,13 @@ export default {
     }
 
     .projectsCard {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
         max-width: 600px;
         min-height: 110px;
     }
 
     .projectsCard {
-        margin: 0.5rem 2rem 0.5rem 2rem;
         border-radius: 1rem;
         backdrop-filter: blur(4px);
 

@@ -1,5 +1,5 @@
 <script setup>
-import Sidebar from './components/Sidebar.vue'
+import Navigation from './components/Navigation.vue'
 import Background from './components/GradientBackground.vue'
 
 import Introduction from './components/Introduction.vue'
@@ -7,13 +7,12 @@ import Projects from './components/Projects.vue'
 </script>
 
 <template>
-<div class="app">
-  <div class="layout">
-    <Sidebar/>
-      <!-- <Background/> -->
-
+<div class="appWrapper" tabindex="-1">
+  <div class="layout" tabindex="-1">
+    <Navigation/>
     <Introduction/>
     <Projects/>
+    <img class="hidden" src="../assets/img/ferologo.svg" />
   </div>
 </div>
 </template>
@@ -76,20 +75,19 @@ button {
     flex-direction: column !important;
   }
 
-  .sidebar {
+  .navigationWrapper {
     flex-direction: row !important;
     width: 100% !important;
     height: 64px !important;
   }
 
-  .wrapper {
-    margin: 32px 32px 32px 32px !important;
-    height: 100vh;
-  }
-
-  .sidebar {
+  .navigationWrapper {
     border-right: none;
     border-bottom: 1px solid rgba(255, 255, 255, 0.15); 
+  }
+
+  .introductionWrapper {
+    margin: 32px 32px 32px 32px !important;
   }
 }
 

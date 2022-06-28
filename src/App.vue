@@ -12,7 +12,7 @@ import Projects from './components/Projects.vue'
     <Navigation/>
     <Introduction/>
     <Projects/>
-    <img class="hidden" src="../assets/img/ferologo.svg" />
+    <img class="hidden" src="./assets/img/ferologo.svg" />
   </div>
 </div>
 </template>

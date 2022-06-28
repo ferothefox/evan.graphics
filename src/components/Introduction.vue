@@ -1,23 +1,23 @@
 <template>
   <div class="introduction">
     <div class="introductionWrapper">
-      <div v-if="!showExtendedDescription" class="subtitles">
+      <div class="subtitles">
         <div class="subtitle _1">Artist</div>
         <div class="subtitle _2">Designer</div>
         <div class="subtitle _3">Developer</div>
       </div>
       <div class="title">Evan Song</div>
 
-      <div v-if="!showExtendedDescription" class="description _1">
+      <div class="description _1">
         I am an experienced designer and developer. I build effective UIs and
         graphics for high-demand products and thriving online communities.
       </div>
 
-      <div v-if="!showExtendedDescription" class="description paragraphMargin _2">
+      <div class="description paragraphMargin _2">
         Take a look at my social media, or email me at <span style="font-family: monospace; font-weight: normal">hi@evan.graphics</span>
       </div>
 
-      <button
+      <div
         class="skillButton"
         @click="showExtendedDescription = !showExtendedDescription"
       >
@@ -26,7 +26,7 @@
           class="caret"
           :class="showExtendedDescription ? 'caretActive' : ''"
         />
-      </button>
+      </div>
 
       <Transition name="slide">
         <div class="extendedDescription" v-if="showExtendedDescription">
@@ -97,7 +97,7 @@ export default {
   }
   to {
     opacity: 1;
-    max-height: 270px;
+    max-height: 240px;
   }
 }
 
@@ -105,7 +105,7 @@ export default {
 @keyframes slideIn {
   from {
     opacity: 1;
-    max-height: 270px;
+    max-height: 240px;
   }
   to {
     opacity: 0;
@@ -122,7 +122,17 @@ export default {
   animation-direction: normal;
   animation-fill-mode: backwards;
   animation-play-state: running;
-  animation-delay: calc(var(--base-delay) + 1100ms); 
+  animation-delay: calc(var(--base-delay) + 1600ms); 
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(19, 19, 21) none repeat scroll 0% 0%;
+  border: 1px solid rgb(34, 35, 37);
+  padding: 0px 16px;
+  border-radius: 32px;
+  height: 32px;
+  max-width: 128px;
   
   transition: 0.2s ease;
 
@@ -136,6 +146,9 @@ export default {
     gap: 0.25rem;
 
     &:hover {
+        background: rgb(28, 29, 31) none repeat scroll 0% 0%;
+        border-color: rgb(49, 48, 53);
+
         color: #eeeeee;
 
         .caret {
@@ -146,8 +159,6 @@ export default {
           fill: #eeeeee;
         }
     }
-
-    width: 100%
 }
 
 .caret {
@@ -177,8 +188,11 @@ export default {
   align-items: center;
 }
 
+.introduction:hover { overflow-y: auto; }
+.introduction::-webkit-scrollbar { width: 0 !important; display: none !important; }
+
 .introductionWrapper {
-  margin: 32px;
+  margin: 2rem;
 }
 
 .title {
@@ -192,6 +206,7 @@ export default {
   animation-delay: calc(var(--base-delay) + 150ms); 
   font-size: 64px;
   font-weight: bolder;
+  white-space: nowrap
 }
 
 .description {
@@ -206,7 +221,7 @@ export default {
   animation-direction: normal;
   animation-fill-mode: backwards;
   animation-play-state: running;
-  animation-delay: calc(var(--base-delay) + 900ms); 
+  animation-delay: calc(var(--base-delay) + 600ms); 
 }
 
 .description._2 {
@@ -217,14 +232,13 @@ export default {
   animation-direction: normal;
   animation-fill-mode: backwards;
   animation-play-state: running;
-  animation-delay: calc(var(--base-delay) + 1000ms); 
+  animation-delay: calc(var(--base-delay) + 700ms); 
 }
 
 .extendedDescription {
   display: flex;
   max-width: 500px;
   word-wrap: break-word;
-  // position: absolute;
 
   flex-direction: column;
 

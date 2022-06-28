@@ -56,6 +56,10 @@
         fill: white;
     }
 
+    .navigationLink > svg[data-icon="discord"] {
+        margin-top: 4px;
+    }
+
     @keyframes fade-in-right {
         from {
             opacity: 0;

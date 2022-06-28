@@ -34,7 +34,7 @@
             <li>Keyboard and audio enthusiast</li>
             <li>Loves web-tech, typography, and cryptography</li>
             <li>Dr. Pepper enjoyer</li>
-            <img class="skillIcons" src="https://skillicons.dev/icons?i=js,ts,vue,html,css,wasm,rust,cpp,java,kotlin,gradle,maven,aws,ai,ps,figma,blender,unreal&perline=9">
+            <SkillIcons class="skillIcons"/>
           </ul>
         </div>
       </Transition>
@@ -45,6 +45,7 @@
 
 <script setup>
 import Caret from "../icons/caret.vue";
+import SkillIcons from "./SkillIcons.vue";
 </script>
 
 <script>

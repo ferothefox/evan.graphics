@@ -1,11 +1,11 @@
 <template>
-  <div class="introduction">
+  <section class="introduction">
     <div class="introductionWrapper">
-      <div class="subtitles">
+      <aside class="subtitles">
         <div class="subtitle _1">Artist</div>
         <div class="subtitle _2">Designer</div>
         <div class="subtitle _3">Developer</div>
-      </div>
+      </aside>
       <div class="title">Evan Song</div>
 
       <div class="description _1">
@@ -39,7 +39,7 @@
         </div>
       </Transition>
     </div>
-  </div>
+  </section>
 </template>
 
 <script setup>

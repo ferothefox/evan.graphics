@@ -1,5 +1,5 @@
 <template>
-    <div class="projects">
+    <section class="projects">
 
         <div class="gradients" style="--color-a: #BA2DB7; --color-b: #CF3C7E; --color-c: #E94F35;"></div>
 
@@ -16,7 +16,7 @@
                 tabindex="1"
             />
         </div>
-    </div>
+    </section>
 </template>
 
 <script setup>

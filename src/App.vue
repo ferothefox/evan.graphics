@@ -7,7 +7,6 @@ import Projects from './components/Projects.vue'
 </script>
 
 <template>
-<noscript>I'm sorry. You can't see my website without Javascript enabled because it utilizes a Javascript framework to render and manage itself. There are no cookies, no tracking, no ads, and no third-party requests. A static version may be served in the future. For now, thanks for understanding.</noscript>
 <div class="app">
   <div class="layout">
     <Sidebar/>

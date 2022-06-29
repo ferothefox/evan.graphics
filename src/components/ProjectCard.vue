@@ -118,7 +118,7 @@ export default {
         --x-px: calc(var(--x) * 1px);
         --y-px: calc(var(--y) * 1px);
         --border: 1px;
-        background: rgba(255, 255, 255, 0.08) none repeat scroll 0% 0%;
+        background: rgba(255, 255, 255, 0.12) none repeat scroll 0% 0%;
         
         overflow: hidden;
         
@@ -133,7 +133,7 @@ export default {
             width: 100%;
             inset: 0px;
             border-radius: inherit;
-            background: radial-gradient(800px circle at var(--x-px) var(--y-px),rgba(255,255,255,0.19),transparent 40%);
+            background: radial-gradient(750px circle at var(--x-px) var(--y-px),rgba(255,255,255,0.2),transparent 40%);
             
         }
 
@@ -144,7 +144,7 @@ export default {
         &:after {
             opacity: 0;
             z-index: 2;
-            transition: opacity 400ms ease 0s;
+            transition: opacity 350ms ease 0s;
         }
 
         &:hover:after {

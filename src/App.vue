@@ -6,8 +6,23 @@ import Introduction from './components/Introduction.vue'
 import Projects from './components/Projects.vue'
 </script>
 
+<script> 
+// Will be dynamic soon.
+export default {
+  data() {
+    return {
+        theme: 'dark' ,
+        fontSize: 'default',
+        access: 'none',
+        accessID: 'none',
+        accessSecret: 'none',
+    }
+  }
+}
+</script>
+
 <template>
-<div class="appWrapper" tabindex="-1">
+<div class="app" :data-theme="theme" :data-font-size="fontSize" :data-access-authenticated="access" :data-access-id="accessID" :data-access-secret="accessSecret" tabindex="-1">
   <main class="layout" tabindex="-1">
     <Navigation/>
     <Introduction/>
@@ -16,6 +31,8 @@ import Projects from './components/Projects.vue'
   </main>
 </div>
 </template>
+
+
 
 <style>
 * { min-width: 0; min-height: 0; }

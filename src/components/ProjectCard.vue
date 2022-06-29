@@ -134,7 +134,6 @@ export default {
             inset: 0px;
             border-radius: inherit;
             background: radial-gradient(750px circle at var(--x-px) var(--y-px),rgba(255,255,255,0.2),transparent 40%);
-            
         }
 
         &:before {

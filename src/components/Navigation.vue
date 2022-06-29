@@ -34,7 +34,7 @@
         background: rgba(6, 6, 6, 0.6) none repeat scroll 0% 0%;
         backdrop-filter: blur(8px);
 
-        transition: 0.1s ease-in-out;
+        transition: 0.25s;
 
         animation-name: fade-in-right-better;
         animation-duration: 800ms;
@@ -51,7 +51,9 @@
     }
 
     .navigationWrapper:hover {
-        transition: 0.1s ease-in-out;
+        border-right: 1px solid rgba(247, 248, 248, 0.2);
+        background: rgba(12, 12, 12, 0.6) none repeat scroll 0% 0%;
+        transition: 0.25s;
     }
 
     .navigationLink {

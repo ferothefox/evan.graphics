@@ -117,9 +117,12 @@ button {
   }
 
   .navigationWrapper {
-    justify-content: flex-end !important;
-    padding-left: 4rem;
-    padding-right: 4rem;
+justify-content: space-between;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+
   }
 
   .navigationWrapper {
@@ -130,6 +133,10 @@ button {
   .navigationWrapper {
     position: fixed;
     top: 0px;
+  }
+
+  .linksContainer {
+    flex-direction: row !important;
   }
 
   .introductionWrapper {

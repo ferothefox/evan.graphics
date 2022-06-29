@@ -1,12 +1,14 @@
 <template>
     <nav class="navigationWrapper">
-        <a class="navigationLink" href="https://go.evan.graphics/discord" target="_blank" rel="noopener noreferrer">
+        <Logo class="navigationIcon"/>
+        <div class="linksContainer">
+            <a class="navigationLink" href="https://go.evan.graphics/discord" target="_blank" rel="noopener noreferrer">
             <Discord /></a>
-        <a class="navigationLink" href="https://go.evan.graphics/twitter" target="_blank" rel="noopener noreferrer">
+            <a class="navigationLink" href="https://go.evan.graphics/twitter" target="_blank" rel="noopener noreferrer">
             <Twitter /></a>
-        <a class="navigationLink" href="https://go.evan.graphics/github" target="_blank" rel="noopener noreferrer">
+            <a class="navigationLink" href="https://go.evan.graphics/github" target="_blank" rel="noopener noreferrer">
             <GitHub /></a>
-
+        </div>
     </nav>
 </template>
 
@@ -14,6 +16,8 @@
     import Discord from "../icons/discord.vue"
     import GitHub from "../icons/github.vue"
     import Twitter from "../icons/twitter.vue"
+
+    import Logo from "../icons/fero.vue"
 </script>
 
 
@@ -21,13 +25,16 @@
     .navigationWrapper {
         display: flex;
         flex-direction: column;
+        flex-shrink: 0;
         align-items: center;
         justify-content: center;
-        flex-shrink: 0;
 
         gap: 32px;
 
         width: 64px;
+
+        padding-top: 1rem;
+        padding-bottom: 1rem;
 
         /* background-color: #0a0a0a; */
 
@@ -54,6 +61,16 @@
         transition: 0.1s ease-in-out;
     }
 
+    .linksContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        gap: 32px;
+        height: calc(100% - 48px)
+    }
+
     .navigationLink {
         width: 24px;
         height: 24px;
@@ -71,6 +88,13 @@
 
     .navigationLink > svg[data-icon="discord"] {
         margin-top: 4px;
+    }
+
+    .navigationIcon {
+        display: flex;
+        flex-shrink: 0;
+        width: 48px;
+        height: 48px;
     }
 
     @keyframes fade-in-right {

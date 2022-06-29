@@ -31,20 +31,26 @@
 
         /* background-color: #0a0a0a; */
 
-        background: rgb(19, 19, 21) none repeat scroll 0% 0%;
+        background: rgba(6, 6, 6, 0.6) none repeat scroll 0% 0%;
+        backdrop-filter: blur(8px);
 
-        opacity: 0.5;
         transition: 0.1s ease-in-out;
-        animation: fade-in-right 1s;
+
+        animation-name: fade-in-right-better;
+        animation-duration: 800ms;
+        animation-timing-function: ease;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+        animation-fill-mode: backwards;
+        animation-play-state: running;
 
         z-index: 3001;
 
         height: 100vh;
-        border-right: 1px solid rgba(255, 255, 255, 0.15);
+        border-right: 1px solid rgba(247, 248, 248, 0.1);
     }
 
     .navigationWrapper:hover {
-        opacity: 0.9;
         transition: 0.1s ease-in-out;
     }
 
@@ -52,8 +58,15 @@
         width: 24px;
         height: 24px;
 
-        color: white;
-        fill: white;
+        color: rgba(247, 248, 248, 0.6);
+        fill: rgba(247, 248, 248, 0.6);
+        transition: 0.25s;
+    }
+
+    .navigationLink:hover {
+        color: rgba(247, 248, 248, 1);
+        fill: rgba(247, 248, 248, 1);
+        transition: 0.25s;
     }
 
     .navigationLink > svg[data-icon="discord"] {
@@ -67,8 +80,23 @@
         }
 
         to {
-            opacity: 0.5;
+            opacity: 1;
             transform: translateX(0);
+        }
+    }
+
+    @keyframes fade-in-right-better {
+        from {
+            opacity:0;
+            -webkit-transform:translateX(-20px);
+            -ms-transform:translateX(-20px);
+            transform:translateX(-20px);
+        }
+        to {
+            opacity:1;
+            -webkit-transform:none;
+            -ms-transform:none;
+            transform:none;
         }
     }
 </style>

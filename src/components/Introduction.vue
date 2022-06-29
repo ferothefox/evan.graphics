@@ -206,7 +206,13 @@ export default {
   animation-delay: calc(var(--base-delay) + 150ms); 
   font-size: 64px;
   font-weight: bolder;
-  white-space: nowrap
+  white-space: nowrap;
+
+  background: linear-gradient(106.62deg, rgb(232, 78, 56) 6.68%, rgb(186, 44, 184) 82.69%) repeat scroll 0% 0%  ;
+  box-decoration-break: clone;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: unset
 }
 
 .description {

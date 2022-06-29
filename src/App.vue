@@ -52,7 +52,7 @@ export default {
 }
 
 html, body {
-  background-color: #0a0a0a;
+  background-color: #060606;
   color: #eeeeee;
 }
 
@@ -117,12 +117,27 @@ button {
   }
 
   .navigationWrapper {
+    justify-content: flex-end !important;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .navigationWrapper {
     border-right: none;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.15); 
+    border-bottom: 1px solid rgba(247, 248, 248, 0.1);
+  }
+
+  .navigationWrapper {
+    position: fixed;
+    top: 0px;
   }
 
   .introductionWrapper {
     margin: 32px 32px 32px 32px !important;
+  }
+
+  .introduction {
+    margin-top: 64px;  
   }
 }
 

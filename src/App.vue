@@ -123,7 +123,7 @@ button {
   }
 
   .navigationWrapper {
-    border-right: none;
+    border-right: none !important;
     border-bottom: 1px solid rgba(247, 248, 248, 0.1);
   }
 

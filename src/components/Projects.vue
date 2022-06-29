@@ -104,7 +104,7 @@ export default {
     .gradients:before {
         content: "";
         position: absolute;
-        opacity: 0.15;
+        opacity: 0.2;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);

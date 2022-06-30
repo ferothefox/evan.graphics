@@ -80,6 +80,10 @@ export default {
         a.openLink > div.projectsCard {
             height: 140px !important
         }
+
+        .projectsCard {
+            max-width: 800px !important;
+        }
     }
 
     .projectsCardLink, .projectsCard {

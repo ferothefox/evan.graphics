@@ -74,11 +74,7 @@ export default {
 
 <style scoped lang="scss">
     @media only screen and (max-width: 850px) {
-        a#projectID_1.openLink > div.projectsCard {
-            height: 130px !important
-        }
-
-        a#projectID_2.openLink > div.projectsCard {
+        a.openLink:nth-child(-n+2) > div.projectsCard {
             height: 140px !important
         }
     }

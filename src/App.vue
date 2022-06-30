@@ -1,11 +1,3 @@
-<script setup>
-import Navigation from './components/Navigation.vue'
-import Background from './components/GradientBackground.vue'
-
-import Introduction from './components/Introduction.vue'
-import Projects from './components/Projects.vue'
-</script>
-
 <script> 
 // Will be dynamic soon.
 export default {
@@ -22,13 +14,8 @@ export default {
 </script>
 
 <template>
-<div class="app" :data-theme="theme" :data-font-size="fontSize" :data-access-authenticated="access" :data-access-id="accessID" :data-access-secret="accessSecret" tabindex="-1">
-  <main class="layout" tabindex="-1">
-    <Navigation/>
-    <Introduction/>
-    <Projects/>
-    <img class="hidden" src="./assets/img/ferologo.svg" />
-  </main>
+<div class="app" style="position: relative; height: 100%;" :data-theme="theme" :data-font-size="fontSize" :data-access-authenticated="access" :data-access-id="accessID" :data-access-secret="accessSecret" tabindex="-1">
+<router-view></router-view>
 </div>
 </template>
 

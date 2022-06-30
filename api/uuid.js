@@ -8,6 +8,5 @@ function uuid () {
 
 export default function handler(request, response) {
     response.status(200)
-    respone.setHeader('X-test', 'test');
     response.json({ data: uuid() });
 }

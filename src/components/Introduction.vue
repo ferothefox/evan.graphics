@@ -6,7 +6,7 @@
         <div class="subtitle _2">Designer</div>
         <div class="subtitle _3">Developer</div>
       </aside>
-      <div class="title">Evan Song</div>
+      <div class="title titleGradient">Evan Song</div>
 
       <div class="description _1">
         I am an experienced designer and developer. I build effective UIs and
@@ -138,6 +138,10 @@ export default {
   height: 32px;
   max-width: 128px;
   
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none; 
+
   transition: 0.2s ease;
 
     margin-top: 1rem;
@@ -211,13 +215,62 @@ export default {
   font-size: 64px;
   font-weight: bolder;
   white-space: nowrap;
+}
 
-  background: linear-gradient(106.62deg, rgb(232, 78, 56) 6.68%, rgb(186, 44, 184) 82.69%) repeat scroll 0% 0%  ;
+.titleGradient {
+  background: linear-gradient(106.62deg, rgb(232, 78, 56) 6.68%, rgb(186, 44, 184) 82.69%) repeat scroll 0% 0%;
+
+  // animation-name: titleGradientSwitch;
+  // animation-duration: 2000ms;
+  // animation-timing-function: ease;
+  // animation-iteration-count: infinite;
+  // animation-direction: normal;
+  // animation-play-state: running;
+
+  // animation-name: titleGradientSize;
+  // animation-duration: 1500ms;
+  // animation-timing-function: ease;
+  // animation-iteration-count: infinite;
+  // animation-direction: normal;
+  // animation-play-state: running;
+
   box-decoration-break: clone;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  color: unset
+  color: unset;
 }
+
+// @keyframes titleGradientSize {
+//   0% { background-size: 100%; }
+//   50% { background-size: 200% }
+//   100% { background-size: 100%;}
+// }
+
+// @keyframes titleGradientSwitch {
+//   0% {
+//     background: linear-gradient(106.62deg, rgb(232, 78, 56) 6.68%, rgb(186, 44, 184) 82.69%) repeat scroll 0% 0%;
+//     box-decoration-break: clone;
+//     -webkit-background-clip: text;
+//     -webkit-text-fill-color: transparent;
+//     color: unset;
+//   }
+
+//   50% {
+//     background: linear-gradient(106.62deg, rgb(56, 185, 232) 6.68%,rgb(89, 44, 186) 82.69%) repeat scroll 0% 0%;
+//     box-decoration-break: clone;
+//     -webkit-background-clip: text;
+//     -webkit-text-fill-color: transparent;
+//     color: unset;
+//   }
+  
+//   100% {
+//     background: linear-gradient(106.62deg, rgb(56, 232, 132) 6.68%,rgb(44, 136, 186) 82.69%) repeat scroll 0% 0%;
+//     box-decoration-break: clone;
+//     -webkit-background-clip: text;
+//     -webkit-text-fill-color: transparent;
+//     color: unset;
+//   }
+// }
 
 .description {
   max-width: 500px;

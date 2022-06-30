@@ -74,7 +74,7 @@ export default {
   // max-height: 300px;
   // overflow: hidden;
 
-  animation: slideOut 1.2s ease;
+  animation: slideOut 0.8s ease;
   overflow: hidden;
 }
 
@@ -86,7 +86,7 @@ export default {
   // opacity: 0;
   // max-height: 0px;
 
-  animation: slideIn 1.4s ease; 
+  animation: slideIn 0.8s ease; 
   overflow: hidden;
 }
 
@@ -94,10 +94,12 @@ export default {
   from {
     opacity: 0;
     max-height: 0px;
+    filter:blur(15px);
   }
   to {
     opacity: 1;
     max-height: 240px;
+    filter: none;
   }
 }
 
@@ -106,10 +108,12 @@ export default {
   from {
     opacity: 1;
     max-height: 240px;
+    filter: none;
   }
   to {
     opacity: 0;
     max-height: 0px;
+    filter:blur(15px);
   }
 }
 

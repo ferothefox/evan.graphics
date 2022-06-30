@@ -44,13 +44,7 @@ export default {
   data() {
     return {
       content: [
-        {
-          icon: 'https://i.ytimg.com/vi/0H_NMEzjD3M/hqdefault.jpg',
-          name: 'You\'ve found a secret!',
-          year: 'JUN 29, 2022',
-          description:
-            'You deserve head-pats. All of them. Stay put and sit tight until blogging functionality is fully functional.',
-        },
+
       ],
     }
   },

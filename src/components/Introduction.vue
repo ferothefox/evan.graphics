@@ -162,10 +162,6 @@ export default {
         .caret {
           fill: #eeeeee;
         }
-
-        .caretActive {
-          fill: #eeeeee;
-        }
     }
 }
 
@@ -173,13 +169,10 @@ export default {
   width: 16px;
   height: 16px;
   fill: #909090;
-  transition: 0.2s ease;
 }
 
 .caretActive {
   transform: rotate(90deg);
-  transition: 0.2s ease;
-  
   fill: #eeeeee;
 }
 

@@ -13,6 +13,7 @@
                 :displayLink="project.displayLink"
                 :year="project.year"
                 :description="project.description"
+                :id="['projectID_'+projectID++]"
                 tabindex="1"
             />
         </div>
@@ -37,6 +38,7 @@ import Project from "./ProjectCard.vue"
             });
         });
     });
+let projectID = 1;
 </script>
 
 <script>

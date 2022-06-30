@@ -73,6 +73,16 @@ export default {
 </script>
 
 <style scoped lang="scss">
+    @media only screen and (max-width: 850px) {
+        a#projectID_1.openLink > div.projectsCard {
+            height: 130px !important
+        }
+
+        a#projectID_2.openLink > div.projectsCard {
+            height: 140px !important
+        }
+    }
+
     .projectsCardLink, .projectsCard {
         flex-shrink: 0;
     }

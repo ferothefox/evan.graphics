@@ -292,8 +292,10 @@ export default {
 }
 
 .extendedDescription {
+  position: absolute;
   display: flex;
   max-width: 500px;
+  padding-bottom: 4rem;
   word-wrap: break-word;
 
   flex-direction: column;

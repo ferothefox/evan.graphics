@@ -126,6 +126,11 @@ button {
   .introduction {
     margin-top: 64px;  
   }
+
+  .extendedDescription {
+      position: initial !important;
+      padding-bottom: 0rem !important;
+  }
 }
 
 ul, ol {
